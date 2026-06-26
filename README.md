@@ -56,8 +56,8 @@ system prompt. Full payload catalogue and explanations in
 [`docs/direct-prompt-injection.md`](docs/direct-prompt-injection.md). Techniques
 covered there:
 
-- **System-prompt override** (incl. an authority/role-play framing variant)
-- **Instruction smuggling via encoding** (base64, ROT13, splitting…)
+- **System-prompt override**
+- **Instruction smuggling via encoding**
 - **Context manipulation via fake dialogue**
 
 Quick test:
