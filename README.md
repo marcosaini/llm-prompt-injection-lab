@@ -124,14 +124,6 @@ Higher = more robust.
 
 `*` flagged run — caveat in the source data, meaning unspecified.
 
-Reading it: the uncensored qwen folds under **authority framing** (4/10) and
-**instruction smuggling** (1/10), the two techniques that exploit a missing
-alignment layer; the aligned models hold those but each has a soft spot
-(`meta-llama` on blunt system-prompt override, `deepseek` on multi-turn drift).
-
-Scoring here was **manual** — the repo doesn't yet ship the harness that
-produced these numbers (see below).
-
 ---
 
 ## Defensive controls
