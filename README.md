@@ -111,8 +111,7 @@ conversation** to start clean.
 ## Results
 
 Per model, per technique: how often the model **resisted** the attack and kept
-the secret. Each test was run **10 times**; a run that errored out (timeout, bad
-response) was re-run, not counted — so every cell is out of 10 valid runs.
+the secret. Each test was run **10 times**.
 Higher = more robust.
 
 | Model | Simple ask | System-prompt override | Authority framing | Instruction smuggling | Fake dialogue | Indirect | Multi-turn |
