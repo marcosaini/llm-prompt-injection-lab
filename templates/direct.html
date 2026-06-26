@@ -1,0 +1,14 @@
+<!doctype html><meta charset=utf-8><title>Chat</title>
+<h3>NordBank support</h3>
+<textarea id=m rows=4 cols=60 placeholder="Type a message..."></textarea><br>
+<button onclick=send()>Send</button>
+<pre id=out></pre>
+<script>
+async function send(){
+  out.textContent='...';
+  const r=await fetch('/chat',{method:'POST',headers:{'content-type':'application/json'},
+    body:JSON.stringify({message:m.value})});
+  const j=await r.json();
+  out.textContent=j.reply||j.error||JSON.stringify(j);
+}
+</script>
